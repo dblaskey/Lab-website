@@ -3,21 +3,17 @@
   --text: #1f1f1f;
   --muted: #555555;
 
-  /* University of South Carolina-inspired color scheme */
+  /* University of South Carolina colors */
   --brand: #73000a;
   --brand-dark: #4a0006;
   --brand-light: #f5e8ea;
-  --black: #000000;
-  --white: #ffffff;
 
-  --surface: #faf7f7;
-  --surface-strong: #f5e8ea;
-  --border: #e4d7d9;
+  --surface: #f7f2f3;
+  --border: #e2d4d6;
   --focus: #ffbf47;
 
   --max-width: 1120px;
   --radius: 18px;
-  --shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   --shadow-soft: 0 6px 18px rgba(115, 0, 10, 0.12);
 }
 
@@ -46,28 +42,23 @@ html {
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(115, 0, 10, 0.1), transparent 32rem),
-    linear-gradient(180deg, #ffffff 0%, var(--surface) 45%);
+  background: var(--bg);
 }
 
 a {
-  color: var(--brand);
-  text-underline-offset: 0.18em;
-  text-decoration-thickness: 0.08em;
+  color: var(--brand-dark);
 }
 
 a:hover {
-  color: var(--brand-dark);
+  color: var(--brand);
 }
 
 a:focus-visible,
 button:focus-visible {
   outline: 4px solid var(--focus);
   outline-offset: 3px;
-  border-radius: 6px;
 }
 
 .skip-link {
@@ -76,8 +67,8 @@ button:focus-visible {
   top: -100px;
   z-index: 1000;
   padding: 0.75rem 1rem;
-  background: var(--black);
-  color: var(--white);
+  background: var(--text);
+  color: #fff;
   border-radius: 0.5rem;
 }
 
@@ -85,10 +76,10 @@ button:focus-visible {
   top: 1rem;
 }
 
-/* Original header layout, updated with USC colors */
+/* Original header structure, color-updated only */
 .site-header {
-  border-bottom: 4px solid var(--brand);
-  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  background: #fff;
 }
 
 .header-inner,
@@ -109,7 +100,7 @@ main,
 .site-title {
   display: inline-flex;
   flex-direction: column;
-  color: var(--black);
+  color: var(--text);
   text-decoration: none;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -122,7 +113,7 @@ main,
 .site-title span {
   color: var(--brand);
   font-size: 0.92rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav-list {
@@ -140,16 +131,16 @@ main,
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  color: var(--black);
+  color: var(--brand-dark);
 }
 
 .nav-list a[aria-current="page"],
 .nav-list a:hover {
-  background: var(--brand);
-  color: var(--white);
+  background: var(--brand-light);
+  color: var(--brand-dark);
 }
 
-/* Main content styling */
+/* Updated main section styling */
 main {
   padding: 2rem 0 4rem;
 }
@@ -158,9 +149,7 @@ main {
   margin: 2rem 0;
   padding: clamp(2rem, 5vw, 4rem);
   border-radius: var(--radius);
-  background:
-    linear-gradient(135deg, rgba(115, 0, 10, 0.08), rgba(0, 0, 0, 0.03)),
-    var(--white);
+  background: linear-gradient(135deg, var(--brand-light), #ffffff);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-soft);
 }
@@ -170,12 +159,8 @@ main {
   font-size: 1.15rem;
 }
 
-section,
-.card,
-.profile,
-.publication,
-.news-item {
-  background: var(--white);
+section {
+  background: #ffffff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
@@ -191,7 +176,7 @@ h1,
 h2,
 h3 {
   line-height: 1.2;
-  color: var(--black);
+  color: #111111;
 }
 
 h1 {
@@ -218,10 +203,10 @@ h3 {
 }
 
 .eyebrow {
-  color: var(--brand);
+  color: var(--brand-dark);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-weight: 900;
+  font-weight: 800;
   margin: 0 0 0.5rem;
 }
 
@@ -235,15 +220,16 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .card,
 .callout {
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 1rem;
   padding: 1.25rem;
-  background: var(--white);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
 }
 
 .callout {
@@ -270,60 +256,43 @@ h3 {
 
 .profile-placeholder {
   min-height: 220px;
-  border-radius: var(--radius);
+  border-radius: 1rem;
   border: 1px dashed var(--border);
-  background:
-    linear-gradient(135deg, rgba(115, 0, 10, 0.08), rgba(0, 0, 0, 0.03)),
-    var(--surface-strong);
+  background: var(--brand-light);
   display: grid;
   place-items: center;
   color: var(--brand);
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   padding: 1rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: calc(var(--radius) - 4px);
-}
-
-.button-link,
-.button,
-.cta,
-a.button,
-a.cta {
+.button-link {
   display: inline-block;
   margin-top: 0.75rem;
-  padding: 0.75rem 1.05rem;
+  padding: 0.7rem 1rem;
   border-radius: 999px;
   background: var(--brand);
-  color: var(--white);
+  color: #fff;
   font-weight: 800;
   text-decoration: none;
-  box-shadow: var(--shadow-soft);
 }
 
-.button-link:hover,
-.button:hover,
-.cta:hover,
-a.button:hover,
-a.cta:hover {
-  background: var(--black);
-  color: var(--white);
+.button-link:hover {
+  background: var(--brand-dark);
+  color: #fff;
 }
 
-/* Original footer style, updated to match USC colors */
+/* Original footer structure, color-updated only */
 .site-footer {
   margin-top: 4rem;
-  border-top: 4px solid var(--brand);
-  background: var(--black);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
 }
 
 .footer-inner {
   padding: 1.5rem 0;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--muted);
 }
 
 .footer-inner p {
@@ -331,30 +300,15 @@ a.cta:hover {
 }
 
 .footer-inner a {
-  color: var(--white);
+  color: var(--brand-dark);
 }
 
 .footer-inner a:hover {
-  color: var(--brand-light);
+  color: var(--brand);
 }
 
 @media (min-width: 760px) {
   .profile {
     grid-template-columns: 280px 1fr;
-  }
-}
-
-@media (max-width: 760px) {
-  .header-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .nav-list {
-    width: 100%;
-  }
-
-  .nav-list a {
-    display: block;
   }
 }
