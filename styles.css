@@ -230,7 +230,6 @@ h3 {
 }
 
 .card,
-.profile,
 .publication,
 .news-item {
   text-align: center;
@@ -238,15 +237,12 @@ h3 {
 
 .card h2,
 .card h3,
-.profile h2,
-.profile h3,
 .publication h3,
 .news-item h3 {
   text-align: center;
 }
 
 .card p,
-.profile p,
 .publication p,
 .news-item p {
   text-align: center;
