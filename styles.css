@@ -1,12 +1,12 @@
 :root {
   --bg: #ffffff;
-  --text: #1f1f1f;
+  --text: #000000;
   --muted: #555555;
 
   /* University of South Carolina colors */
   --brand: #73000a;
-  --brand-dark: #4a0006;
-  --brand-light: #f5e8ea;
+  --brand-dark: #570008;
+  --brand-light: #844247;
 
   --surface: #f7f2f3;
   --border: #e2d4d6;
@@ -131,7 +131,7 @@ main,
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  color: var(--brand-dark);
+  color: var(--text);
 }
 
 .nav-list a[aria-current="page"],
