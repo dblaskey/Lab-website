@@ -267,6 +267,22 @@ h3 {
   padding: 1rem;
 }
 
+.profile-photo {
+  width: 280px;
+  max-width: 100%;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
 .button-link {
   display: inline-block;
   margin-top: 0.75rem;
