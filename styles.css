@@ -78,10 +78,10 @@ button:focus-visible {
   top: 1rem;
 }
 
-/* Original header structure, color-updated only */
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: #fff;
+  background: #000;
+  color: #fff;
 }
 
 .header-inner,
@@ -102,7 +102,7 @@ main,
 .site-title {
   display: inline-flex;
   flex-direction: column;
-  color: var(--text);
+  color: var(--bg);
   text-decoration: none;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -133,13 +133,13 @@ main,
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  color: var(--text);
+  color: var(--bg);
 }
 
 .nav-list a[aria-current="page"],
 .nav-list a:hover {
-  background: var(--brand-light);
-  color: var(--brand-dark);
+  background: var(--brand-dark-actual);
+  color: var(--bg);
 }
 
 /* Updated main section styling */
@@ -352,12 +352,12 @@ h3 {
 .site-footer {
   margin-top: 4rem;
   border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: #000;
 }
 
 .footer-inner {
   padding: 1.5rem 0;
-  color: var(--muted);
+  color: #fff;
 }
 
 .footer-inner p {
@@ -365,7 +365,7 @@ h3 {
 }
 
 .footer-inner a {
-  color: var(--brand-dark);
+  color: #fff;
 }
 
 .footer-inner a:hover {
