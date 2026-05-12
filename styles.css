@@ -257,6 +257,17 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .card {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
 .callout {
   background: var(--brand-light);
   border-left: 6px solid var(--brand);
