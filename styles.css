@@ -5,8 +5,10 @@
 
   /* University of South Carolina colors */
   --brand: #73000a;
-  --brand-dark: #570008;
-  --brand-light: #844247;
+  --brand-dark: #4a0006;
+  --brand-light: #f5e8ea;
+  --brand-dark-actual: #570008;
+  --brand-light-actual: #844247;
 
   --surface: #f7f2f3;
   --border: #e2d4d6;
