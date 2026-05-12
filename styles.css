@@ -371,11 +371,12 @@ h3 {
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.88);
 }
 
 .lightbox.open {
@@ -383,32 +384,57 @@ h3 {
 }
 
 .lightbox-img {
-  max-width: 90%;
-  max-height: 85%;
-  border-radius: 0.5rem;
+  display: block;
+  max-width: min(96vw, 1200px);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
 .lightbox button {
   position: absolute;
-  background: none;
   border: none;
-  color: white;
-  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
   cursor: pointer;
+  line-height: 1;
+  transition: background 160ms ease;
+}
+
+.lightbox button:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .lightbox-close {
   top: 1rem;
-  right: 1.5rem;
+  right: 1rem;
   font-size: 2.5rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
 }
 
 .lightbox-prev {
-  left: 2rem;
+  left: 1rem;
 }
 
 .lightbox-next {
-  right: 2rem;
+  right: 1rem;
+}
+
+body.lightbox-open {
+  overflow: hidden;
 }
 
 .site-footer {
