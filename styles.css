@@ -79,7 +79,7 @@ button:focus-visible {
 }
 
 .site-header {
-  border-bottom: 4px solid var(--border);
+  border-bottom: 2px solid var(--border);
   background: #000;
   color: #fff;
 }
@@ -109,10 +109,12 @@ main,
 }
 
 .site-title:hover {
-  color: var(--brand);
+  color: var(--brand-light-actual);
 }
+
 .site-title span {
   color: #ffffff;
+  font-size: 0.9rem;
   border-bottom: 2px solid var(--brand);
   padding-bottom: 2px;
 }
@@ -350,7 +352,7 @@ h3 {
 /* Original footer structure, color-updated only */
 .site-footer {
   margin-top: 4rem;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);
   background: #000;
 }
 
