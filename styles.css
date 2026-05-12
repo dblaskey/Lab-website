@@ -79,7 +79,7 @@ button:focus-visible {
 }
 
 .site-header {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 4px solid var(--border);
   background: #000;
   color: #fff;
 }
@@ -111,11 +111,10 @@ main,
 .site-title:hover {
   color: var(--brand);
 }
-
 .site-title span {
-  color: var(--brand);
-  font-size: 0.92rem;
-  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 2px solid var(--brand);
+  padding-bottom: 2px;
 }
 
 .nav-list {
