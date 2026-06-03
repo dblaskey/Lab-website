@@ -99,6 +99,12 @@ main,
   padding: 1rem 0;
 }
 
+.site-logo {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+
 .site-title {
   display: inline-flex;
   flex-direction: column;
