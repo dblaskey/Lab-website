@@ -99,10 +99,35 @@ main,
   padding: 1rem 0;
 }
 
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand-link:hover {
+  color: var(--brand-light-actual);
+}
+
+.site-title-text {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.site-title-text span {
+  color: #ffffff;
+  font-size: 0.8rem;
+  border-bottom: 2px solid var(--brand);
+  padding-bottom: 2px;
+}
+
 .site-logo {
-    height: 60px;
-    width: auto;
-    vertical-align: middle;
+  height: 60px;
+  width: auto;
 }
 
 .site-title {
