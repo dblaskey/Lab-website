@@ -110,7 +110,7 @@ main,
 }
 
 .brand-link:hover {
-  color: var(--text);
+  color: var(--brand-light-actual);
 }
 
 .site-title-text {
