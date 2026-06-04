@@ -110,7 +110,7 @@ main,
 }
 
 .brand-link:hover {
-  color: var(--brand-light-actual);
+  color: var(--brand);
 }
 
 .site-title-text {
@@ -140,7 +140,7 @@ main,
 }
 
 .site-title:hover {
-  color: var(--brand-light-actual);
+  color: var(--brand);
 }
 
 .site-title span {
