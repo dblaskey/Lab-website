@@ -120,7 +120,7 @@ main,
 
 .site-title-text span {
   color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border-bottom: 2px solid var(--brand);
   padding-bottom: 2px;
 }
@@ -145,7 +145,7 @@ main,
 
 .site-title span {
   color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border-bottom: 2px solid var(--brand);
   padding-bottom: 2px;
 }
