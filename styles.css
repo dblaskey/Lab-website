@@ -110,7 +110,12 @@ main,
 }
 
 .brand-link:hover {
-  color: var(--brand);
+  color: #ffffff;
+}
+
+.brand-link:hover .site-title-text,
+.brand-link:hover .site-title-text span {
+  color: #ffffff;
 }
 
 .site-title-text {
