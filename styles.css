@@ -206,7 +206,7 @@ section {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  padding: 1.5rem 0;
   margin-block: 0;
 }
 
