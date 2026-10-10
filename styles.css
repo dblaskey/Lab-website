@@ -228,7 +228,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.6rem, 3vw, 2.25rem);
-  margin-top: 2.5rem;
+  margin-top: 1.25rem;
   padding-bottom: 0.4rem;
   border-bottom: 3px solid var(--brand);
 }
